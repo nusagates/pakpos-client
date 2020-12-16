@@ -1,0 +1,37 @@
+{
+  "name": "electron-webpack-quick-start",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron-webpack dev",
+    "watch": "electron-webpack  development -- --watch",
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bootstrap": "^4.0.0",
+    "bootstrap-vue": "^2.21.0",
+    "electron-fetch": "^1.7.2",
+    "font-awesome": "^4.7.0",
+    "form-data": "^3.0.0",
+    "jquery": "^3.5.1",
+    "pouchdb": "^7.2.2",
+    "pouchdb-find": "^7.2.2",
+    "relational-pouch": "^4.0.0",
+    "sass-loader": "^10.1.0",
+    "source-map-support": "^0.5.16",
+    "sweetalert2": "^10.12.5"
+  },
+  "devDependencies": {
+    "electron": "8.2.0",
+    "electron-builder": "^22.4.1",
+    "electron-webpack": "^2.8.2",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "~4.42.1"
+  }
+}
